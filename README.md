@@ -55,8 +55,10 @@ This project uses [The sentence transformers library](https://pypi.org/project/s
 This step passes all the questions through the model and obtains vectors , these vectors are stored in the FAQs folder as well , and will be used in further calls instead of 
 making the vectors all over again.
 
-## Answering questions !!!
-When a user asks a question , his/her question is also converted to a vector by the model , now the model searches for the closest question(from the questions we had previously generated + orignal FAQs questions) and returns the answer corrosponding to the closest question. The closest question is determined using **cosine similirity***.  
+### Answering questions !!!
+When a user asks a question , his/her question is also converted to a vector by the model , now the model searches for the closest question(from the questions we had previously generated + orignal FAQs questions) and returns the answer corrosponding to the closest question. The closest question is determined using **cosine similirity**.  
 Instead of using a simple closest I have employed a KNN, kind of search.
 
+
+## How to Run the code ?
 
