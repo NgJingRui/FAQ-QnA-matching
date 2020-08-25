@@ -50,3 +50,13 @@ The dictionaries are stored in pickle format in FAQs folder.
 ### Training
 This project uses [The sentence transformers library](https://pypi.org/project/sentence-transformers/), to convert sentences into vectors , I have started with a pretrained roberta model. The model is then fine tuned on the specific FAQ using [batch hard triplet loss](https://arxiv.org/pdf/1703.07737.pdf).  
 **This is why there should be atleast 2 questions for a label in the dataset**
+
+### Fit-FAQ
+This step passes all the questions through the model and obtains vectors , these vectors are stored in the FAQs folder as well , and will be used in further calls instead of 
+making the vectors all over again.
+
+## Answering questions !!!
+When a user asks a question , his/her question is also converted to a vector by the model , now the model searches for the closest question(from the questions we had previously generated + orignal FAQs questions) and returns the answer corrosponding to the closest question. The closest question is determined using **cosine similirity***.  
+Instead of using a simple closest I have employed a KNN, kind of search.
+
+
