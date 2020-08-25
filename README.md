@@ -44,4 +44,4 @@ able to take any generic FAQ as input and produce an FAQ chat bot that answers a
   Once you are on Rajeev Chowk , you can reach the Copper Heights compex and take right ...  --> 1 (label)
   The weather is rainy today --> 2 (label)  
  ```
-The dictionaries are stored in pickle format on disc.
+The dictionaries are stored in pickle format in FAQs folder.
