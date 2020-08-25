@@ -45,3 +45,8 @@ able to take any generic FAQ as input and produce an FAQ chat bot that answers a
   The weather is rainy today --> 2 (label)  
  ```
 The dictionaries are stored in pickle format in FAQs folder.
+
+
+### Training
+This project uses [The sentence transformers library](https://pypi.org/project/sentence-transformers/), to convert sentences into vectors , I have started with a pretrained roberta model. The model is then fine tuned on the specific FAQ using [batch hard triplet loss](https://arxiv.org/pdf/1703.07737.pdf).  
+**This is why there should be atleast 2 questions for a label in the dataset**
