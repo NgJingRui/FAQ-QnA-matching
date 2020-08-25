@@ -31,4 +31,17 @@ able to take any generic FAQ as input and produce an FAQ chat bot that answers a
  
  
  
- 
+ ### Data
+ Data is just all the generated questions , along with the orignal questions, and the answers. This data is stored on disc so that we dont have to repeat the entire
+ process again. The data is stored as two seperate dictionaries.  
+ ```
+ QuestionTolabel -
+  How to get to the DLF office from Rajeev Chowk ? --> 1 (label)
+  How can one reach the DLF office from Rajeev Chowk ? --> 1 (label)
+  How is the weather today ? --> 2 (different label as its not the same question)
+  
+ AnswerTolabel -
+  Once you are on Rajeev Chowk , you can reach the Copper Heights compex and take right ...  --> 1 (label)
+  The weather is rainy today --> 2 (label)  
+ ```
+The dictionaries are stored in pickle format on disc.
