@@ -62,3 +62,11 @@ Instead of using a simple closest I have employed a KNN, kind of search.
 
 ## How to Run the code ?
 
+From the perspective of a user you only have to use , the **modelInterface** class provided. Every step explained above is exexuted in the class. The class is well commented.
+You should give it a read. The modelInterface.py can be found in **deplay** directory.
+
+1) Clone the repo.
+2) Get everything from requirements.txt.
+3) Get your FAQ , and instansiate a modelInterface object with it (also provide the path for the FAQ to be cached) ***Do this on cpu only***
+
+
