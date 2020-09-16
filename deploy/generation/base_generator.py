@@ -1,17 +1,18 @@
 import os
 import sys
+sys.path.append('./')
 import itertools
 import random
 import nlpaug
 import nlpaug.augmenter.char as nac
 import nlpaug.augmenter.word as naw
 import re
-from rajat_work.qgen.generator.symsub import SymSubGenerator
-from rajat_work.qgen.generator.fpm.fpm import FPMGenerator
+from .rajat_work.qgen.generator.symsub import SymSubGenerator
+from .rajat_work.qgen.generator.fpm.fpm import FPMGenerator
 #from rajat_work.qgen.encoder.universal_sentence_encoder import USEEncoder
-from rajat_work.qgen.encoder.dummy import dummyEN
-from rajat_work.qgen.generator.eda import EDAGenerator
-from broken_english.broken_english_generator import BrokenEnglishGen
+from .rajat_work.qgen.encoder.dummy import dummyEN
+from .rajat_work.qgen.generator.eda import EDAGenerator
+from .broken_english.broken_english_generator import BrokenEnglishGen
 import multiprocessing as mp
 import pandas as pd
 import numpy as np

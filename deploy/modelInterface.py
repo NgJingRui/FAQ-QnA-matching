@@ -437,8 +437,10 @@ class modelInterface:
 
 
 if __name__ == "__main__":
-
-
+    BASE_PATH = "C:/Users/jing rui/Desktop/Projects/Fork/FAQ-QnA-matching/"
+    ADOPTION_OUTPUT_PATH = "C:/Users/jing rui/Desktop/Projects/Fork/FAQ-QnA-matching/FAQs/adoption/"
+    adoption_data = load_dict(BASE_PATH + "Orignal_FAQs/adoption_orignal.pkl")
+    modelInter = modelInterface(faq_path=ADOPTION_OUTPUT_PATH, faq_data=adoption_data)
 
     """
     covid_df = pd.read_csv("../data/covid19data/msf_covid19.csv", header = None)
@@ -461,8 +463,8 @@ if __name__ == "__main__":
     covid_data =  {"question_to_label" : covid_questions ,"answer_to_label" : covid_answers}
     """
     
-    orignal = load_dict("../Orignal_FAQs/comcare_orignal.pkl")
-    modelInter = modelInterface(faq_path = "../FAQs/comcare", faq_data = orignal)
+    # orignal = load_dict("../Orignal_FAQs/comcare_orignal.pkl")
+    # modelInter = modelInterface(faq_path = "../FAQs/comcare", faq_data = orignal)
 
     
 
